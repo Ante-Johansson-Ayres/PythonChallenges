@@ -61,10 +61,16 @@ def printList():
     for i in range(nodeNoCounter):
         print('Key: ' + str(currentNode.key) + ' value: ' + str(currentNode.value), end = ' => ')
         currentNode = currentNode.next
-    print('END, listlength: ' + str(nodeNoCounter) + '\n')
+    print('END\n')
 
 
 #### TESTING ####
+#Note: when the output to command is prefaced by **, no new change in the order is made (the get returns the value at position 0),
+# when it is prefaced by ++, a node is moved to the first position in the linked list, indicating most recently altered nodes
+# when it is prefaced by --, no node is found and no change in the list structure is made.
+#
+# The code would need to be altered a little, where it doesn't print values but only returns them from the functions. But this is ok for the challenge I think.
+
 maxCap = 3 #Total size of the linkedlist / cache
 #initalizing the linked list#
 nodeNoCounter = 1 
