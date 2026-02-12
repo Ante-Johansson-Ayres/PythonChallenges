@@ -16,8 +16,9 @@ def put(newNode):
     newNode.next = head
     head = newNode
     nodeNoCounter += 1
-    if nodeNoCounter > maxCap:
-        deleteNode()
+    if nodeNoCounter <= maxCap:
+        return newNode
+    deleteNode()
     return newNode
 
 def deleteNode():
