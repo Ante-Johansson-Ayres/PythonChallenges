@@ -8,7 +8,7 @@ def retry(fun):
             try:
                 result = fun(x,y)
                 return result
-            except ZeroDivisionError:
+            except Exception:
                 time.sleep(delay^(backoff*i))
                 print("Failed! Try no: " + str(i+1) + " (waited " + str(delay^(backoff*i)) + " seconds) \n")
         print("TOTAL FAILURE!")
