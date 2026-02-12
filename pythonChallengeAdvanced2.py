@@ -60,7 +60,7 @@ def get(findKey):
 def printList():
     currentNode = head
     for i in range(nodeNoCounter):
-        print('Key: ' + str(currentNode.key) + ' value: ' + str(currentNode.value), end = ' => ')
+        print('(Key: ' + str(currentNode.key) + ' Value: ' + str(currentNode.value), end = ') => ')
         currentNode = currentNode.next
     print('END\n')
 
