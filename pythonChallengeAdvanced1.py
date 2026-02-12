@@ -1,6 +1,7 @@
 import time
 delay = 1
 tries = 3
+backoff = 2
 def retry(fun):
     def wrapper(x, y):
         for i in range(tries):
@@ -8,8 +9,8 @@ def retry(fun):
                 result = fun(x,y)
                 return result
             except ZeroDivisionError:
-                time.sleep(delay)
-                print("Failed! Try no: " + str(i+1) +"\n")
+                time.sleep(delay^(backoff*i))
+                print("Failed! Try no: " + str(i+1) + " (waited " + str(delay^(backoff*i)) + " seconds) \n")
         print("TOTAL FAILURE!")
         return None
     return wrapper
