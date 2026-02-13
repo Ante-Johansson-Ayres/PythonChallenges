@@ -70,8 +70,8 @@ def printList():
 #
 # The code would need to be altered a little, where it doesn't print values but only returns them from the functions. But this is ok for the challenge I think.
 
-maxCap = 3 #Total size of the linkedlist / cache
 #initalizing the linked list#
+maxCap = 3 #Total size of the linkedlist / cache
 nodeNoCounter = 1 
 node0 = Node(0, 0)
 node0.next = None

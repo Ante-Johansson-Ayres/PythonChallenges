@@ -14,7 +14,6 @@ import string
 
 # score = int(input("Input Number "))
 # score = int(score%2)
-# print(score)
 # match score:
 #     case 0:
 #         print("Even")
