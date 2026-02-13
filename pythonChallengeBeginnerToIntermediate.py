@@ -46,7 +46,7 @@ import string
 # freq = sorted(list(set(freq)), key=lambda x : x[1], reverse=True)[0:k] # sorts by frequency
 # print(freq)
 
-## Intermediate 2. Warning, very inefficient code below!!
+## Intermediate 2. Warning, very bad code below!!
 
 temp = ''
 wordList = []
