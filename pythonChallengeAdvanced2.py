@@ -32,8 +32,6 @@ def deleteNode():
                 currentNode.next = None
                 nodeNoCounter -= 1
                 break
-
-    return 1
 def get(findKey):
     global head
     global maxCap
